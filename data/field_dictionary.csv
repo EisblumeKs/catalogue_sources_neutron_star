@@ -1,5 +1,5 @@
 file,field,data_type,unit,description
-data/catalogue.csv,source_id,string,,Persistent row identifier. Gaps in the sequence are intentional.
+data/catalogue.csv,source_id,integer,,Consecutive catalogue number from 1 to 144. The canonical_source_id identifies the physical object independently of this numbering.
 data/catalogue.csv,source_name,string,,Source designation; aliases refer to the same physical object.
 data/catalogue.csv,canonical_source_id,string,,Canonical identifier used to match objects across tables.
 data/catalogue.csv,population,string,,Population label in the source compilation.
@@ -24,7 +24,7 @@ data/catalogue.csv,spin_url,string,,Persistent literature URL or catalogue URL c
 data/catalogue.csv,thermal_url,string,,Persistent literature URL corresponding to thermal_reference.
 data/catalogue.csv,catalogue_locator,string,,Location of the source in the compilation or cited literature. Living-table line numbers refer to the stated snapshot.
 data/catalogue.csv,notes,string,,Source-specific assumptions and qualifications relevant to the adopted thermal constraint.
-data/source_references.csv,source_id,string,,Identifier matching data/catalogue.csv.
+data/source_references.csv,source_id,integer,,"Consecutive catalogue number from 1 to 144, matching data/catalogue.csv."
 data/source_references.csv,source_name,string,,Source designation.
 data/source_references.csv,quantity,string,,spin or thermal.
 data/source_references.csv,reference_key,string,,Entry key in references.bib.

@@ -8,6 +8,7 @@ authors:
   - family-names: Chen
     given-names: Zhiwei
 version: 1.0.0
+url: "https://github.com/EisblumeKs/catalogue_sources_neutron_star"
 abstract: >-
   Spin frequencies and thermal constraints for 144 rapidly rotating neutron
   stars, comprising 18 accreting transients and 126 rotation-powered
