@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite this dataset and the original studies supplying the values used in your analysis."
+type: dataset
+title: "Spin and Thermal Constraints for 144 Rapidly Rotating Neutron Stars"
+authors:
+  - family-names: Wu
+    given-names: Zeyue
+  - family-names: Chen
+    given-names: Zhiwei
+version: 1.0.0
+abstract: >-
+  Spin frequencies and thermal constraints for 144 rapidly rotating neutron
+  stars, comprising 18 accreting transients and 126 rotation-powered
+  millisecond pulsars. The catalogue contains eight two-sided thermal
+  estimates and 136 temperature ceilings, with reference core-temperature
+  coordinates, source-level references, and field definitions.
+keywords:
+  - neutron stars
+  - millisecond pulsars
+  - r-modes
+  - thermal emission
+  - stellar catalogues

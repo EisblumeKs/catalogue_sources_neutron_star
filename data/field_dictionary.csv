@@ -1,0 +1,32 @@
+file,field,data_type,unit,description
+data/catalogue.csv,source_id,string,,Persistent row identifier. Gaps in the sequence are intentional.
+data/catalogue.csv,source_name,string,,Source designation; aliases refer to the same physical object.
+data/catalogue.csv,canonical_source_id,string,,Canonical identifier used to match objects across tables.
+data/catalogue.csv,population,string,,Population label in the source compilation.
+data/catalogue.csv,spin_hz,number,Hz,Adopted spin frequency.
+data/catalogue.csv,distance_kpc,number,kpc,"Distance retained from the compilation, where available. A blank is not a zero distance."
+data/catalogue.csv,temperature_constraint,string,,two_sided_estimate or upper_limit.
+data/catalogue.csv,thermal_basis,string,,"Original thermal classification: strict, conditional, upper_limit, or flux_ceiling; defined in README.md. These labels do not classify r-mode stability."
+data/catalogue.csv,surface_temperature_inf_k,number,K,"Redshifted effective surface temperature: central estimate for a two-sided result, or the adopted ceiling for an upper limit. A flux_ceiling value is derived from luminosity."
+data/catalogue.csv,surface_temperature_inf_lower_k,number,K,Lower endpoint of the surface-temperature interval. Blank for an upper limit.
+data/catalogue.csv,surface_temperature_inf_upper_k,number,K,Upper endpoint of a two-sided surface-temperature interval; equals the adopted ceiling for an upper limit.
+data/catalogue.csv,core_temperature_inf_reference_k,number,K,Reference redshifted core-temperature coordinate used for the catalogue display; derived through the envelope and stellar-structure models.
+data/catalogue.csv,core_temperature_inf_lower_k,number,K,"Lower endpoint of the displayed core-temperature range, including envelope and stellar-structure assumptions. Blank for an upper limit."
+data/catalogue.csv,core_temperature_inf_upper_k,number,K,"Upper endpoint of the displayed core-temperature range, or the reference ceiling for an upper limit. This is not a universal observational confidence bound."
+data/catalogue.csv,input_observable,string,,Temperature or luminosity input as recorded in the compilation; units are stated in the entry.
+data/catalogue.csv,interval_description,string,,"Statistical or systematic meaning of the source interval, where known. No common Gaussian error model is imposed."
+data/catalogue.csv,spectral_band,string,,"Energy band in keV, or a description identifying a bolometric or atmosphere-temperature result."
+data/catalogue.csv,surface_emission_model,string,,"Atmosphere model retained in the compilation, where explicitly recorded. The flux_ceiling conversion assumes uniform blackbody surface emission."
+data/catalogue.csv,spin_evidence,string,,"Basis of the adopted spin frequency. For catalogue periods, the dated table supplies the period coordinate."
+data/catalogue.csv,spin_reference,string,,BibTeX key for the adopted spin value or compilation.
+data/catalogue.csv,thermal_reference,string,,"BibTeX key for the temperature estimate, upper limit, or luminosity input."
+data/catalogue.csv,spin_url,string,,Persistent literature URL or catalogue URL corresponding to spin_reference.
+data/catalogue.csv,thermal_url,string,,Persistent literature URL corresponding to thermal_reference.
+data/catalogue.csv,catalogue_locator,string,,Location of the source in the compilation or cited literature. Living-table line numbers refer to the stated snapshot.
+data/catalogue.csv,notes,string,,Source-specific assumptions and qualifications relevant to the adopted thermal constraint.
+data/source_references.csv,source_id,string,,Identifier matching data/catalogue.csv.
+data/source_references.csv,source_name,string,,Source designation.
+data/source_references.csv,quantity,string,,spin or thermal.
+data/source_references.csv,reference_key,string,,Entry key in references.bib.
+data/source_references.csv,url,string,,Persistent literature URL or catalogue URL.
+data/source_references.csv,catalogue_locator,string,,Location retained from the input compilation; this may identify a catalogue row rather than a source-specific observing paper.
